@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            background-image: url('R.jpeg'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            color: #000;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+        h2 {
+            color: red;
+            font-size: 35px;
+        }
+        table {
+            color: white;
+            font-weight: 400;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>Contact Us</h2>
+    <form action="submit_form.php" method="post">
+        <table>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="message">Message:</label></td>
+                <td><textarea id="message" name="message" rows="4" required></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;"><input type="submit" value="Send Message"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
